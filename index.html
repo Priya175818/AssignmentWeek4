@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Responsive FrameFlow image slider">
+  <title>FrameFlow Image Slider</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="slider.js" defer></script>
+</head>
+<body>
+  <main class="page">
+    <header class="page-header">
+      <p class="eyebrow">A collection of moments</p>
+      <h1>FrameFlow</h1>
+      <p class="subtitle">
+        Discover a new view with every slide.
+      </p>
+    </header>
+
+    <section class="slider" aria-label="Image gallery">
+      <div class="viewport" id="sliderViewport">
+        <div class="track" id="slideTrack">
+
+          <!-- Slide 1: Waterfall -->
+          <article class="slide">
+            <img
+              src="https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?auto=format&fit=crop&w=1400&q=85"
+              alt="Beautiful waterfall surrounded by lush green nature">
+            <div class="caption">
+              <span>01 — WATERFALL</span>
+              <h2>Nature in Motion</h2>
+            </div>
+          </article>
+
+          <!-- Slide 2: Flowers -->
+          <article class="slide">
+            <img
+              src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=1400&q=85"
+              alt="Colorful flowers blooming in a beautiful garden">
+            <div class="caption">
+              <span>02 — FLOWERS</span>
+              <h2>A Garden of Colors</h2>
+            </div>
+          </article>
+
+          <!-- Slide 3: Green Valley -->
+          <article class="slide">
+            <img
+              src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1400&q=85"
+              alt="Beautiful green valley surrounded by a peaceful landscape">
+            <div class="caption">
+              <span>03 — GREEN VALLEY</span>
+              <h2>Where Nature Blooms</h2>
+            </div>
+          </article>
+
+          <!-- Slide 4: Sunrise -->
+          <article class="slide">
+            <img
+              src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=1400&q=85"
+              alt="Golden sunrise illuminating a peaceful landscape">
+            <div class="caption">
+              <span>04 — SUNRISE</span>
+              <h2>A New Beginning</h2>
+            </div>
+          </article>
+
+          <!-- Slide 5: Snow -->
+          <article class="slide">
+            <img
+              src="https://images.unsplash.com/photo-1517299321609-52687d1bc55a?auto=format&fit=crop&w=1400&q=85"
+              alt="Beautiful winter scenery covered in snow">
+            <div class="caption">
+              <span>05 — WINTER</span>
+              <h2>Peace in the Snow</h2>
+            </div>
+          </article>
+
+        </div>
+
+        <button
+          class="arrow previous"
+          id="previousButton"
+          type="button"
+          aria-label="Previous image">
+          &#10094;
+        </button>
+
+        <button
+          class="arrow next"
+          id="nextButton"
+          type="button"
+          aria-label="Next image">
+          &#10095;
+        </button>
+      </div>
+
+      <div class="slider-footer">
+        <div
+          class="indicators"
+          id="slideIndicators"
+          aria-label="Choose a slide">
+        </div>
+
+        <p class="counter" id="slideCounter" aria-live="polite">
+          01 / 05
+        </p>
+      </div>
+    </section>
+
+    <p class="help-text">
+      Select an arrow or indicator to explore the gallery.
+    </p>
+  </main>
+</body>
+</html>
